@@ -8,10 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 @Service
-@RequiredArgsConstructor
 public class UserDetailsServiceImpl {
-
-    private final UsuarioClient usuarioClient;
 
     public UserDetails loadUserByUsername(String email, String token) {
 
